@@ -29,15 +29,17 @@
 }
 .nav .logo-container{
     width:6%;
+    transform: rotateZ(-20deg);
 }
 .nav .logo-container img{
     width:100%;
 }
 .nav .title{
     font-size:1.8em;
-    font-family:'FJalla One',sans-serif;
+    font-family:'Architects Daughter',sans-serif;
     color:white;
     margin-right:2.5em;
+    margin-left:.1em;
 }
 .nav .search{
     margin-top:1em;

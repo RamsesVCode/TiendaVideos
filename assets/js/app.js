@@ -21,7 +21,7 @@
                         </figure>
                         <div class="description-container">
                             <p class="item-description">${(item.title).substring(0,9)}...</p>
-                            <p class="item-val"><span class="star"><i></i></span>7/10</p>
+                            <p class="item-val"><span class="star"><i></i></span>${item.rating}/10</p>
                         </div>
                     </div>`;
         }
@@ -43,9 +43,10 @@
     const $movies = document.getElementById('movies');
     const $General = document.getElementById('movies-container');
     let lista = await getData('https://yts.mx/api/v2/list_movies.json?genre=action');
-    let listaGeneral = await getData('https://yts.mx/api/v2/list_movies.json?genre=action');
     renderMovies(lista.data.movies,$movies,0);
+    let listaGeneral = await getData('https://yts.mx/api/v2/list_movies.json?genre=action');
     renderMovies(listaGeneral.data.movies,$General,'1');
+    console.log(listaGeneral);
     // console.log(lista);
 
 })();
