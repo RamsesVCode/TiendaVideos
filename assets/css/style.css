@@ -209,7 +209,14 @@
     display:flex;
     overflow:auto;
 }
-
+.premieres .movies .loader{
+    width:100%;
+    height:auto;
+    text-align:center;
+}
+.premieres .movies .loader img{
+    width:20%;
+}
 .body .premieres .item-list{
     display:block;
     min-width:25%;
