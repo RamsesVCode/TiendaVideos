@@ -226,6 +226,8 @@
     border-radius:0 0 .6em .4em;
     box-shadow:0 4px 18px 4px rgba(0,0,0,.5);
     margin:0 1.6em 1.2em 0;
+    text-align:center;
+    text-decoration:none;
 }
 .body .premieres .item-list figure{
     overflow:hidden;

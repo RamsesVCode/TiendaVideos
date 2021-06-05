@@ -42,9 +42,9 @@
     }
     const $movies = document.getElementById('movies');
     const $General = document.getElementById('movies-container');
-    let lista = await getData('https://yts.mx/api/v2/list_movies.json?genre=action');
+    let lista = await getData('https://yts.mx/api/v2/list_movies.json?Genres=Action');
     renderMovies(lista.data.movies,$movies,0);
-    let listaGeneral = await getData('https://yts.mx/api/v2/list_movies.json?genre=action');
+    let listaGeneral = await getData('https://yts.mx/api/v2/list_movies.json?genre=horror');
     renderMovies(listaGeneral.data.movies,$General,'1');
     console.log(listaGeneral);
     // console.log(lista);
